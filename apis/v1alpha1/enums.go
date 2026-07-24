@@ -15,57 +15,57 @@
 
 package v1alpha1
 
-type ACMeAccountStatus string
+type AcmeAccountStatus string
 
 const (
-	ACMeAccountStatus_DEACTIVATED ACMeAccountStatus = "DEACTIVATED"
-	ACMeAccountStatus_REVOKED     ACMeAccountStatus = "REVOKED"
-	ACMeAccountStatus_VALID       ACMeAccountStatus = "VALID"
+	AcmeAccountStatus_DEACTIVATED AcmeAccountStatus = "DEACTIVATED"
+	AcmeAccountStatus_REVOKED     AcmeAccountStatus = "REVOKED"
+	AcmeAccountStatus_VALID       AcmeAccountStatus = "VALID"
 )
 
-type ACMeAuthorizationBehavior string
+type AcmeAuthorizationBehavior string
 
 const (
-	ACMeAuthorizationBehavior_PRE_APPROVED ACMeAuthorizationBehavior = "PRE_APPROVED"
+	AcmeAuthorizationBehavior_PRE_APPROVED AcmeAuthorizationBehavior = "PRE_APPROVED"
 )
 
-type ACMeContact string
+type AcmeContact string
 
 const (
-	ACMeContact_NOT_REQUIRED ACMeContact = "NOT_REQUIRED"
-	ACMeContact_REQUIRED     ACMeContact = "REQUIRED"
+	AcmeContact_NOT_REQUIRED AcmeContact = "NOT_REQUIRED"
+	AcmeContact_REQUIRED     AcmeContact = "REQUIRED"
 )
 
-type ACMeDomainValidationFailureReason string
+type AcmeDomainValidationFailureReason string
 
 const (
-	ACMeDomainValidationFailureReason_ACCESS_DENIED         ACMeDomainValidationFailureReason = "ACCESS_DENIED"
-	ACMeDomainValidationFailureReason_DOMAIN_MISMATCH       ACMeDomainValidationFailureReason = "DOMAIN_MISMATCH"
-	ACMeDomainValidationFailureReason_DOMAIN_NOT_ALLOWED    ACMeDomainValidationFailureReason = "DOMAIN_NOT_ALLOWED"
-	ACMeDomainValidationFailureReason_ENDPOINT_NOT_ACTIVE   ACMeDomainValidationFailureReason = "ENDPOINT_NOT_ACTIVE"
-	ACMeDomainValidationFailureReason_HOSTED_ZONE_NOT_FOUND ACMeDomainValidationFailureReason = "HOSTED_ZONE_NOT_FOUND"
-	ACMeDomainValidationFailureReason_INTERNAL_FAILURE      ACMeDomainValidationFailureReason = "INTERNAL_FAILURE"
-	ACMeDomainValidationFailureReason_INVALID_CHANGE_BATCH  ACMeDomainValidationFailureReason = "INVALID_CHANGE_BATCH"
-	ACMeDomainValidationFailureReason_INVALID_PUBLIC_DOMAIN ACMeDomainValidationFailureReason = "INVALID_PUBLIC_DOMAIN"
-	ACMeDomainValidationFailureReason_TIMED_OUT             ACMeDomainValidationFailureReason = "TIMED_OUT"
+	AcmeDomainValidationFailureReason_ACCESS_DENIED         AcmeDomainValidationFailureReason = "ACCESS_DENIED"
+	AcmeDomainValidationFailureReason_DOMAIN_MISMATCH       AcmeDomainValidationFailureReason = "DOMAIN_MISMATCH"
+	AcmeDomainValidationFailureReason_DOMAIN_NOT_ALLOWED    AcmeDomainValidationFailureReason = "DOMAIN_NOT_ALLOWED"
+	AcmeDomainValidationFailureReason_ENDPOINT_NOT_ACTIVE   AcmeDomainValidationFailureReason = "ENDPOINT_NOT_ACTIVE"
+	AcmeDomainValidationFailureReason_HOSTED_ZONE_NOT_FOUND AcmeDomainValidationFailureReason = "HOSTED_ZONE_NOT_FOUND"
+	AcmeDomainValidationFailureReason_INTERNAL_FAILURE      AcmeDomainValidationFailureReason = "INTERNAL_FAILURE"
+	AcmeDomainValidationFailureReason_INVALID_CHANGE_BATCH  AcmeDomainValidationFailureReason = "INVALID_CHANGE_BATCH"
+	AcmeDomainValidationFailureReason_INVALID_PUBLIC_DOMAIN AcmeDomainValidationFailureReason = "INVALID_PUBLIC_DOMAIN"
+	AcmeDomainValidationFailureReason_TIMED_OUT             AcmeDomainValidationFailureReason = "TIMED_OUT"
 )
 
-type ACMeDomainValidationStatus string
+type AcmeDomainValidationStatus string
 
 const (
-	ACMeDomainValidationStatus_DELETING   ACMeDomainValidationStatus = "DELETING"
-	ACMeDomainValidationStatus_INVALID    ACMeDomainValidationStatus = "INVALID"
-	ACMeDomainValidationStatus_VALID      ACMeDomainValidationStatus = "VALID"
-	ACMeDomainValidationStatus_VALIDATING ACMeDomainValidationStatus = "VALIDATING"
+	AcmeDomainValidationStatus_DELETING   AcmeDomainValidationStatus = "DELETING"
+	AcmeDomainValidationStatus_INVALID    AcmeDomainValidationStatus = "INVALID"
+	AcmeDomainValidationStatus_VALID      AcmeDomainValidationStatus = "VALID"
+	AcmeDomainValidationStatus_VALIDATING AcmeDomainValidationStatus = "VALIDATING"
 )
 
-type ACMeEndpointStatus string
+type AcmeEndpointStatus string
 
 const (
-	ACMeEndpointStatus_ACTIVE   ACMeEndpointStatus = "ACTIVE"
-	ACMeEndpointStatus_CREATING ACMeEndpointStatus = "CREATING"
-	ACMeEndpointStatus_DELETING ACMeEndpointStatus = "DELETING"
-	ACMeEndpointStatus_FAILED   ACMeEndpointStatus = "FAILED"
+	AcmeEndpointStatus_ACTIVE   AcmeEndpointStatus = "ACTIVE"
+	AcmeEndpointStatus_CREATING AcmeEndpointStatus = "CREATING"
+	AcmeEndpointStatus_DELETING AcmeEndpointStatus = "DELETING"
+	AcmeEndpointStatus_FAILED   AcmeEndpointStatus = "FAILED"
 )
 
 type CertificateExport string
