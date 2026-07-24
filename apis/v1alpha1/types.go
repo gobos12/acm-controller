@@ -30,8 +30,8 @@ var (
 
 // Contains ACM-specific metadata about a certificate.
 type ACMCertificateMetadata struct {
-	AcmeAccountID   *string `json:"acmeAccountID,omitempty"`
-	AcmeEndpointARN *string `json:"acmeEndpointARN,omitempty"`
+	ACMeAccountID   *string `json:"acmeAccountID,omitempty"`
+	ACMeEndpointARN *string `json:"acmeEndpointARN,omitempty"`
 	// The origin of the certificate's key pair.
 	CertificateKeyPairOrigin *string      `json:"certificateKeyPairOrigin,omitempty"`
 	CreatedAt                *metav1.Time `json:"createdAt,omitempty"`
@@ -51,8 +51,8 @@ type ACMCertificateMetadata struct {
 
 // Filters certificates by ACM metadata.
 type ACMCertificateMetadataFilter struct {
-	AcmeAccountID   *string `json:"acmeAccountID,omitempty"`
-	AcmeEndpointARN *string `json:"acmeEndpointARN,omitempty"`
+	ACMeAccountID   *string `json:"acmeAccountID,omitempty"`
+	ACMeEndpointARN *string `json:"acmeEndpointARN,omitempty"`
 	// The origin of the certificate's key pair.
 	CertificateKeyPairOrigin *string `json:"certificateKeyPairOrigin,omitempty"`
 	ExportOption             *string `json:"exportOption,omitempty"`
@@ -66,26 +66,26 @@ type ACMCertificateMetadataFilter struct {
 }
 
 // Contains detailed information about an ACME account.
-type AcmeAccount struct {
+type ACMeAccount struct {
 	AccountURL          *string `json:"accountURL,omitempty"`
 	PublicKeyThumbprint *string `json:"publicKeyThumbprint,omitempty"`
 }
 
 // Contains summary information about an ACME account.
-type AcmeAccountSummary struct {
+type ACMeAccountSummary struct {
 	AccountURL          *string `json:"accountURL,omitempty"`
 	PublicKeyThumbprint *string `json:"publicKeyThumbprint,omitempty"`
 }
 
 // Contains detailed information about an ACME endpoint.
-type AcmeEndpoint struct {
+type ACMeEndpoint struct {
 	CertificateTags []*Tag  `json:"certificateTags,omitempty"`
 	EndpointURL     *string `json:"endpointURL,omitempty"`
 	FailureReason   *string `json:"failureReason,omitempty"`
 }
 
 // Contains summary information about an ACME endpoint.
-type AcmeEndpointSummary struct {
+type ACMeEndpointSummary struct {
 	CertificateTags []*Tag  `json:"certificateTags,omitempty"`
 	EndpointURL     *string `json:"endpointURL,omitempty"`
 	FailureReason   *string `json:"failureReason,omitempty"`
@@ -94,8 +94,8 @@ type AcmeEndpointSummary struct {
 // Contains metadata about an ACM certificate. This structure is returned in
 // the response to a DescribeCertificate request.
 type CertificateDetail struct {
-	AcmeAccountID           *string `json:"acmeAccountID,omitempty"`
-	AcmeEndpointARN         *string `json:"acmeEndpointARN,omitempty"`
+	ACMeAccountID           *string `json:"acmeAccountID,omitempty"`
+	ACMeEndpointARN         *string `json:"acmeEndpointARN,omitempty"`
 	CertificateARN          *string `json:"certificateARN,omitempty"`
 	CertificateAuthorityARN *string `json:"certificateAuthorityARN,omitempty"`
 	// The origin of the certificate's key pair.
